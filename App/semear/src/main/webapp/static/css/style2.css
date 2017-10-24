@@ -1,0 +1,139 @@
+body
+{
+    background: #e9ebee;
+}
+/*Style Login*/
+.home-image{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/DSC_3931.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#loginMain{
+    background-color: rgba(238, 238, 238, 0.7);
+}
+
+/*Style Menu Top*/
+.navbar-default{
+    background: #009688;
+    border-color: #009688;
+}
+
+#lembrarSenha, #recuperarSenha{
+	color: #fff !important;
+	margin-bottom: 0px !important;
+	font-weight: normal;
+}
+
+#logo{
+    background-image: url(../images/logo-semear.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    width: 95px;
+    height: 50px;
+    margin: 0px 5px;
+    /*letter-spacing:-3px;*/
+}
+
+#form-pesquisa{
+    border: none;
+    box-shadow: none;
+    float: left;
+    -webkit-box-shadow: none;
+    margin-left: 0px;
+/*    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 15px;*/
+}
+@media (min-width: 768px){
+    #form-pesquisa{
+        margin-right: 15px;
+        padding-left: 0px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 1200px){
+    #form-pesquisa{
+        width: 450px;
+    }
+}
+
+@media (max-width: 767px){
+    #form-pesquisa{
+        margin: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #form-pesquisa .form-group {
+         margin-bottom: 0px; 
+    }
+    .form-group {
+         margin-bottom: 0px; 
+    }
+}
+
+#navInput, #navButton{
+    padding: 0px 1px;
+}
+#navInput>.form-control{
+    width: 100%!important;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #555;
+    background-color: #fff!important;
+}
+
+.navbar-default .navbar-nav>li>a {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media (max-width: 767px){
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #fff;
+    }
+}
+
+#top{
+    width: 100%;
+    height: 71px;
+    display: block;
+}
+
+.publication{
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.publication #acao>a{
+    padding: 5px;
+}
+
+a{
+    color: #009688;
+}
+
+a:hover, a:focus{
+    color: #01534c;
+}
+
+.jumbotron{
+	padding-top: 71px;
+}
+
+.noPaddingLeft{
+	padding-left: 2px;
+}
+
+.noPaddingRigth{
+	padding-right: 2px;
+}
