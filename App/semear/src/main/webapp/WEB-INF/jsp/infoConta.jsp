@@ -13,7 +13,7 @@
 	<div class="container">
 		<%@include file="componentes/menuSidebar.jsp"%>
 
-		<div class="col-md-10">
+		<div class="col-md-9">
 			<div class="row publication">
 				<h2>Conta</h2>
 				<table class="table col-md-12">

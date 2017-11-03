@@ -10,17 +10,12 @@
                     </a>
                 </li>
 
-                <li  data-toggle="collapse" data-target="#disciplinas" class="collapsed active">
-                    <a href="#"><i class="fa fa-book fa-lg"></i> Disciplinas <span class="arrow"></span></a>
+                <li  data-toggle="collapse" data-target="#cursos" class="collapsed active">
+                    <a href="#"><i class="fa fa-book fa-lg"></i> Cursos <span class="arrow"></span></a>
                 </li>
-                <ul class="sub-menu collapse" id="disciplinas">
-                    <li><a href="#">Física e Eletricidade</a></li>
-                    <li><a href="#">Verificação e Validação</a></li>
-                    <li><a href="#">Gerência de Projetos de Software</a></li>
-                    <li><a href="#">Estimativas de Esforço em Projetos de Software</a></li>
-                    <li><a href="#">Gerencia de Configuração de Software</a></li>
-                    <li><a href="#">Computação Gráfica</a></li>
-                    <li class="active"><a href="#">Projeto Interdiciplinar</a></li>
+                <ul class="sub-menu collapse" id="cursos">
+                    <li class="active"><a href="/cursos/unievangelica/engenharia-de-computacao">Engenharia de Computação</a></li>
+                    <li><a href="#">Engenharia de Software</a></li>
                 </ul>
 
                 <li  data-toggle="collapse" data-target="#cadastrar" class="collapsed">
