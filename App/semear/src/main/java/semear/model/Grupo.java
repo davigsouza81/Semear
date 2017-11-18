@@ -31,8 +31,8 @@ public class Grupo implements Serializable {
 	private List<Usuario> usuarios;
 	
 	@ManyToMany(cascade = CascadeType.ALL)
-	@JoinTable(name = "tb_grupo_permissao", joinColumns = { @JoinColumn(name = "fk_tb_permissao_id") }, inverseJoinColumns = {
-			@JoinColumn(name = "fk_tb_grupo_id") })
+	@JoinTable(name = "tb_grupo_permissao", joinColumns = { @JoinColumn(name = "fk_tb_grupo_id") }, inverseJoinColumns = {
+			@JoinColumn(name = "fk_tb_permissao_id") })
 	private List<Permissao> permissoes;
 
 	public int getId() {

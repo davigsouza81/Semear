@@ -138,3 +138,46 @@ a:hover, a:focus{
 .noPaddingRigth{
 	padding-right: 2px;
 }
+
+/*Estilo acordeon curso disciplinas*/
+#accordion .panel-heading{
+	cursor: pointer;
+}
+
+#accordion .panel-heading[aria-selected="false"]::before, #accordion .panel-heading[aria-selected="true"]::before {
+	content: '\e259';
+	display: block;
+	position: absolute;
+	right: 20px;
+	font-family: 'Glyphicons Halflings';
+	font-size: 0.6em;
+	margin: 9px 0px;
+	
+}
+
+#accordion .panel-heading[aria-selected="true"]::before {
+	content: '\e260';
+}
+
+#accordion table {
+	margin-bottom: 0px;
+}
+
+#accordion td{
+	border: none;
+}
+
+#accordion .panel-heading h4, .panel-heading h4{
+	margin: 5px;
+}
+
+
+/*Estilo painel perfis*/
+#perfil-panel{
+	background-image: url(/static/images/background.jpeg);
+    background-size: 105%;
+}
+
+#perfil-navbar{
+	background: #fff;
+}

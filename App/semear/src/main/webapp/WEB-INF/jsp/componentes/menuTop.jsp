@@ -36,10 +36,10 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="menuPrincipal">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="/">Davi Souza</a></li>
+				<li><a href="/${SPRING_SECURITY_CONTEXT.authentication.principal.username}"><b>${SPRING_SECURITY_CONTEXT.authentication.principal.usuario.nome} ${SPRING_SECURITY_CONTEXT.authentication.principal.usuario.sobrenome}</b></a></li>
 				<li class="dropdown">
 				<a href="#" class=" dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding: 10px;">
-					<img src="/static/Perfis/p1.jpg" class="img-circle" style="width: 30px;">
+					<img src="/static/Perfis/pefil-default.png" class="img-circle" style="width: 30px;">
 				</a>
 					<ul class="dropdown-menu">
 						<li><a href="/info-conta">Minha Conta</a></li>

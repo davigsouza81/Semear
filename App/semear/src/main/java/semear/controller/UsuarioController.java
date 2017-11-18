@@ -1,66 +1,49 @@
 package semear.controller;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import semear.security.UsuarioSistema;
 import semear.service.UsuarioService;
 
 @Controller
+@RequestMapping("/")
 public class UsuarioController {
-	
+
 	@Autowired
 	private UsuarioService usuarioService;
-	
-//	@GetMapping("logout")
-//	public String logout(HttpSession session) {
-//		session.invalidate();
-//		
-//		return "redirect:login";
-//	}
-	
-//	@RequestMapping("efetuaLogin")
-//	public String efetuaLogin(Usuario usuario, HttpSession session) {
-//	  if(usuarioService.existeUsuario(usuario)) {
-//	    session.setAttribute("usuarioLogado", usuario);
-//	    return "menu";
-//	  }
-//	  return "redirect:loginForm";
-//	}
-	
-	
-	
-	//modificar
-//		public void efetuarLogin(HttpSession session){
-//			session.setAttribute("usuarioLogado", usuarioService.findUsuario(1));
-//		}
-		
-//		//modificar
-//		public boolean statusSession(HttpServletRequest request){
-//			efetuarLogin(request.getSession());
-//			return request.getSession().getAttribute("usuarioLogado") != null;
-//		}
 
-//		@GetMapping("/info-conta")
-//		public String infoConta(HttpServletRequest request){
-//			if(statusSession(request)){
-//			request.setAttribute("usuario", request.getSession().getAttribute("usuarioLogado"));
-//			
-//			return "infoConta";
-//			}
-//			return "redirect:login";
-//		}
+	@GetMapping("{nomeUsuario}")
+	public ModelAndView perfilUsuario(@AuthenticationPrincipal UsuarioSistema usuarioSistema, @PathVariable String nomeUsuario,  @RequestParam Optional<String> pagina){
+		ModelAndView mv = new ModelAndView();
 		
-		@GetMapping("/info-conta")
-		public ModelAndView infoConta(@AuthenticationPrincipal UsuarioSistema usuarioSistema){
-			
-			ModelAndView mv = new ModelAndView();
-			mv.addObject("usuario", usuarioService.findUsuario((int) usuarioSistema.getId()));
-			mv.setViewName("infoConta");
-			
-			return mv;
+		mv.addObject("mode", "MODE_PUBLICACOES");
+		if(pagina.isPresent()){
+			if(pagina.get().equals("inscricoes"))
+				mv.addObject("mode", "MODE_INSCRICOES");
+			else if(pagina.get().equals("sobre"))
+				mv.addObject("mode", "MODE_SOBRE");
 		}
+		mv.setViewName(usuarioSistema.getUsername().equals(nomeUsuario)? "perfilUsuario" : "reditect: " + nomeUsuario);
+		
+		return mv;
+	}
+	
+	@GetMapping("/info-conta")
+	public ModelAndView infoConta(@AuthenticationPrincipal UsuarioSistema usuarioSistema) {
+
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("usuario", usuarioService.findUsuario(usuarioSistema.getUsuario().getId()));
+		mv.setViewName("infoConta");
+
+		return mv;
+	}
 }

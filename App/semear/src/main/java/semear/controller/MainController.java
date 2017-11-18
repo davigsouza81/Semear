@@ -1,5 +1,7 @@
 package semear.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
@@ -20,7 +22,7 @@ public class MainController {
 	private CursoService cursoService;
 
 	@GetMapping("/")
-	public ModelAndView home(@AuthenticationPrincipal UsuarioSistema usuarioSistema){
+	public ModelAndView home(@AuthenticationPrincipal UsuarioSistema usuarioSistema, HttpSession session){
 		ModelAndView mv = new ModelAndView();
 		
 		if(usuarioSistema == null){

@@ -38,7 +38,7 @@ public class SemearUserDetailsService implements UserDetailsService{
 			throw new UsernameNotFoundException("Usuário não encontrado!");
 		}
 		
-		return new UsuarioSistema(usuario.getId(), usuario.getNome(), usuario.getNomeUsuario(), usuario.getSenha(), authorities(usuario));
+		return new UsuarioSistema(usuario, authorities(usuario));
 	}
 	
 	public Collection<? extends GrantedAuthority> authorities(Usuario usuario) {
