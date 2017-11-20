@@ -21,6 +21,7 @@ public class SecurityWebConfig  extends WebSecurityConfigurerAdapter{
 	            // Para qualquer requisição (anyRequest) é preciso estar 
 	            // autenticado (authenticated).
 	        	.antMatchers("/static/**", "/", "/aluno", "/teste2").permitAll()
+	        	.antMatchers("/publicacoes-pendentes").hasRole("MANTER_PUBLICACAO")
 	            .anyRequest().authenticated()
 	        .and()
 	        //.httpBasic()

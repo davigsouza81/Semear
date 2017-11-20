@@ -43,8 +43,8 @@
 				</a>
 					<ul class="dropdown-menu">
 						<li><a href="/info-conta">Minha Conta</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
+<!-- 						<li><a href="#">Another action</a></li> -->
+<!-- 						<li><a href="#">Something else here</a></li> -->
 						<li role="separator" class="divider"></li>
 						<li><script>
 							function logout() {
