@@ -6,9 +6,10 @@ body
 .home-image{
     width: 100%;
     height: 100%;
-    background-image: url(../images/DSC_3931.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    position: fixed;
+    z-index: -1;
+    background: url(../images/DSC_3931.jpg) no-repeat fixed;
+    background-size: cover;
 }
 
 #loginMain{
@@ -180,4 +181,14 @@ a:hover, a:focus{
 
 #perfil-navbar{
 	background: #fff;
+}
+
+
+/*Estilo Perfil Instituicao*/
+.intituicao-curso{
+	margin-bottom: 0px;
+}
+
+.intituicao-curso img {
+	width: 120px;
 }

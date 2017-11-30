@@ -12,7 +12,8 @@
 <!-- Bootstrap core CSS -->
 <%@include file="componentes/head.jsp"%>
 </head>
-<body class="home-image">
+<body>
+<div class="home-image"></div>
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header" style="margin: 11px 0px">
@@ -66,13 +67,7 @@
 				<div class="col-md-6">
 					<h3>Bem-vindo ao</h3>
 					<h1>Semear</h1>
-					<p class="text-justify">O SEMEAR tem como principal objetivo
-						publicar trabalhos e artigos acadêmicos desenvolvidos pelos alunos
-						da instituição. O sistema deverá disponibilizar um acervo de
-						conteúdos aprovados pelos docentes responsáveis pela avaliação dos
-						trabalhos, com o intuito de incentivar os discentes da instituição
-						a desenvolver conteúdos com maior qualidade, ter acessibilidade a
-						materiais que auxiliam nas atividades acadêmicas.</p>
+					<p class="text-justify">O SEMEAR é uma plataforma de publicação e compartilhamento de trabalhos e artigos acadêmicos que disponibiliza um acervo de conteúdos aprovados no  intuito de incentivar discentes e docentes a desenvolverem conteúdos com maior qualidade. </p>
 				</div>
 				<div class="col-md-6">
 					<h2>Cadastre-se</h2>
@@ -167,50 +162,50 @@
 		</div>
 	</div>
 
-	<div class="container">
-		<!-- Example row of columns -->
-		<div class="row">
-			<div class="col-md-4">
-				<h2>Heading</h2>
-				<p>Donec id elit non mi porta gravida at eget metus. Fusce
-					dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-					ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-					magna mollis euismod. Donec sed odio dui.</p>
-				<p>
-					<a class="btn btn-default" href="#" role="button">View details
-						&raquo;</a>
-				</p>
-			</div>
-			<div class="col-md-4">
-				<h2>Heading</h2>
-				<p>Donec id elit non mi porta gravida at eget metus. Fusce
-					dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-					ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-					magna mollis euismod. Donec sed odio dui.</p>
-				<p>
-					<a class="btn btn-default" href="#" role="button">View details
-						&raquo;</a>
-				</p>
-			</div>
-			<div class="col-md-4">
-				<h2>Heading</h2>
-				<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-					egestas eget quam. Vestibulum id ligula porta felis euismod semper.
-					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-					nibh, ut fermentum massa justo sit amet risus.</p>
-				<p>
-					<a class="btn btn-default" href="#" role="button">View details
-						&raquo;</a>
-				</p>
-			</div>
-		</div>
+<!-- 	<div class="container"> -->
+<!-- 		<!-- Example row of columns -> -->
+<!-- 		<div class="row"> -->
+<!-- 			<div class="col-md-4"> -->
+<!-- 				<h2>Heading</h2> -->
+<!-- 				<p>Donec id elit non mi porta gravida at eget metus. Fusce -->
+<!-- 					dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, -->
+<!-- 					ut fermentum massa justo sit amet risus. Etiam porta sem malesuada -->
+<!-- 					magna mollis euismod. Donec sed odio dui.</p> -->
+<!-- 				<p> -->
+<!-- 					<a class="btn btn-default" href="#" role="button">View details -->
+<!-- 						&raquo;</a> -->
+<!-- 				</p> -->
+<!-- 			</div> -->
+<!-- 			<div class="col-md-4"> -->
+<!-- 				<h2>Heading</h2> -->
+<!-- 				<p>Donec id elit non mi porta gravida at eget metus. Fusce -->
+<!-- 					dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, -->
+<!-- 					ut fermentum massa justo sit amet risus. Etiam porta sem malesuada -->
+<!-- 					magna mollis euismod. Donec sed odio dui.</p> -->
+<!-- 				<p> -->
+<!-- 					<a class="btn btn-default" href="#" role="button">View details -->
+<!-- 						&raquo;</a> -->
+<!-- 				</p> -->
+<!-- 			</div> -->
+<!-- 			<div class="col-md-4"> -->
+<!-- 				<h2>Heading</h2> -->
+<!-- 				<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, -->
+<!-- 					egestas eget quam. Vestibulum id ligula porta felis euismod semper. -->
+<!-- 					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum -->
+<!-- 					nibh, ut fermentum massa justo sit amet risus.</p> -->
+<!-- 				<p> -->
+<!-- 					<a class="btn btn-default" href="#" role="button">View details -->
+<!-- 						&raquo;</a> -->
+<!-- 				</p> -->
+<!-- 			</div> -->
+<!-- 		</div> -->
 
-		<hr>
+<!-- 		<hr> -->
 
-		<footer>
-			<p>&copy; 2016 Company, Inc.</p>
-		</footer>
-	</div>
+<!-- 		<footer> -->
+<!-- 			<p>&copy; 2016 Company, Inc.</p> -->
+<!-- 		</footer> -->
+<!-- 	</div> -->
 	<!-- /container -->
 </body>
 </html>
