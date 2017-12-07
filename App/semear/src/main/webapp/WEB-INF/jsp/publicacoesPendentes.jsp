@@ -83,7 +83,7 @@ and open the template in the editor.
                                     <div class="col-md-12">
                                         
                                         <button type="button" class="btn btn-success btn-block">Aceitar Publicação</button>
-                                        <button type="button" class="btn btn-danger btn-block">Regeitar Publicação</button>
+                                        <button type="button" class="btn btn-danger btn-block">Rejeitar Publicação</button>
                                     </div>
                                 </div>
                             </div>
